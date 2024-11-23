@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19-dars</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/svg/flag4.svg"
+      type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-[#F5F5F5] overflow-y-scroll">
+    <div class="loader-container" id="loader">
+      <div class="loader"></div>
+    </div>
+    <div id="content" style="display: none">
+      <!-- Your main content goes here -->
+    </div>
+    <header class="header bg-[#ededed] py-[14px] max-[932px]:hidden">
+      <div class="container2">
+        <div class="flex items-center justify-between">
+          <ul
+            class="flex items-center justify-between gap-[24px] text-[#6f6f6f] text-[14px]">
+            <li><a href="">Для юридических лиц</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Оплата и доставка</a></li>
+            <li><a href="">Акции и бонусные баллы</a></li>
+            <li><a href="">Площадки</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+          <div class="flex items-center justify-between gap-[24px]">
+            <div
+              class="flex items-center justify-between gap-[16px] max-[1318px]:hidden">
+              <a href="">+7 909 993 89 70</a>
+              <a href="">+7 495 120-21-50</a>
+            </div>
+            <div
+              class="flex items-center justify-between gap-[10px] max-[1010px]:hidden">
+              <img src="./src/assets/svg/whatsap.svg" alt="" />
+              <img src="./src/assets/svg/tg.svg" alt="" />
+              <img src="./src/assets/svg/tel.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="border-b border-b-[#ddd]">
+      <div class="container2">
+        <div class="flex items-center py-[24px] justify-between gap-5">
+          <img src="./src/assets/svg/logo.svg" alt="" />
+          <button
+            class="rounded-[12px] bg-[#f17e00] text-[white] p-3 px-7 max-[480px]:hidden hover:bg-yellow-50 hover:text-[#f17e00] transition-all active:scale-[0.9]">
+            Каталог
+          </button>
+
+          <div class="max-[970px]:hidden">
+            <div class="flex items-end gap-2">
+              <h1 class="font-extrabold text-[12px]">Пн-Пт</h1>
+              <p class="text-[12px] font-medium">08:00-20:00</p>
+            </div>
+            <div class="flex items-end gap-2">
+              <h1 class="font-extrabold text-[12px]">Сб-Вс</h1>
+              <p class="text-[12px] font-medium">09:00-19:00</p>
+            </div>
+          </div>
+          <div
+            class="w-[50%] rounded-[12px] bg-[#ededed] flex items-center justify-between p-2 px-5 max-[480px]:w-full">
+            <input
+              class="text-[#b0b0b0] outline-none border-none bg-transparent w-full"
+              placeholder="Искать товары"
+              type="text" />
+            <img src="./src/assets/svg/search.svg" alt="" />
+          </div>
+          <div class="flex items-center gap-5 max-[655px]:hidden">
+            <img src="./src/assets/svg/bucket.svg" alt="" />
+            <img src="./src/assets/svg/like.svg" alt="" />
+            <img src="./src/assets/svg/account.svg" alt="" />
+          </div>
+          <label for="check" class="hidden max-[932px]:block">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+    <section class="">
+      <div class="container2 py-6">
+        <div class="overflow-auto">
+          <div class="flex justify-between gap-3 max-[1000px]:w-[1000px]">
+            <a href="" class="font-extrabold font-roboto">Фуршетные наборы</a>
+            <a href="" class="font-extrabold font-roboto">Хиты</a>
+            <a href="" class="font-extrabold font-roboto">Скидки</a>
+            <a href="" class="font-extrabold font-roboto">Готовые решения</a>
+            <a href="" class="font-extrabold font-roboto">Новинки</a>
+            <a href="" class="font-extrabold font-roboto">Кухни мира</a>
+            <a href="" class="font-extrabold font-roboto">Кейтеринг</a>
+            <a href="" class="font-extrabold font-roboto"
+              >Доставка домашней еды</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container2 flex items-center gap-3 pb-6">
+        <p class="text-[#75c94d]">Главная</p>
+        <i class="fa-solid fa-chevron-right text-[#6f6f6f]"></i>
+        <p class="text-[#6f6f6f]">Фуршетные наборы</p>
+      </div>
+      <div class="w-fit p-0 m-0 uppercase container2">
+        <p
+          class="text-[30px] max-[400px]:text-[20px] font-bold font-roboto yellow w-fit mb-5">
+          Фуршетные наборы
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container2 text-center font-medium text-[#111] font-opensans">
+        <div class="relative">
+          <div class="swiper mySwiper my-8">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard1.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Канапе
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard2.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Тарталетки
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard3.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Рулетики
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard4.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Фуршет<br />
+                      в стаканчиках
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard5.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Сэндвичи,<br />
+                      брускетты
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard6.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Мини-бургеры
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard7.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Канапе
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard1.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Канапе
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mini_cards">
+                  <div
+                    class="mx-auto mini_card border-2 border-[#f17e00] rounded-[14px] flex items-center flex-col w-fit h-[140px]">
+                    <img
+                      class="rounded-t-[12px]"
+                      src="./src/assets/img/minicard2.png"
+                      alt="" />
+                    <p
+                      class="font-opensans flex justify-center items-center flex-col my-auto">
+                      Канапе
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="next w-[40px] h-[40px] bg-[white] text-[#f17e00] flex items-center justify-center rounded-[100px] absolute top-[50px] z-10 right-[-10px]">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div
+              class="prev w-[40px] h-[40px] bg-[white] text-[#f17e00] flex items-center justify-center rounded-[100px] absolute top-[50px] z-10 left-[-10px]">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container2">
+        <div class="flex flex-row">
+          <input id="task" class="hidden" type="checkbox" />
+          <div
+            class="basis-[25%] leftsidebar sticky top-0 h-[100vh] overflow-y-scroll overflow-x-hidden">
+            <div>
+              <h1 class="text-[19px] font-semibold font-roboto my-2">
+                Цена <i class="fa-solid fa-chevron-down"></i>
+              </h1>
+              <div class="flex items-center gap-3 w-fit py-8">
+                <input
+                  placeholder="От"
+                  class="outline-none border border-[#ccc] p-3 rounded-[12px] w-[126px]"
+                  type="text" />
+                <input
+                  placeholder="До"
+                  class="outline-none border border-[#ccc] p-3 rounded-[12px] w-[126px]"
+                  type="text" />
+              </div>
+              <img src="./src/assets/img/range1.png" alt="" />
+              <div class="mt-9 mb-4">
+                <div class="w-[260px] h-[1px] bg-[#ddd]"></div>
+                <h1 class="text-[19px] font-semibold font-roboto my-2">
+                  Тип <i class="fa-solid fa-chevron-down"></i>
+                </h1>
+                <div class="w-[260px] h-[1px] bg-[#ddd]"></div>
+              </div>
+              <div class="flex flex-col ml-8">
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside1.png" alt="" />
+                  <a href="/">Акции</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside2.png" alt="" />
+                  <a>Готовые сеты</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside3.png" alt="" />
+                  <a>Канапе</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside4.png" alt="" />
+                  <a>Мини-бургеры</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside5.png" alt="" />
+                  <a>Тарталетки</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside6.png" alt="" />
+                  <a>Пирожки</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside7.png" alt="" />
+                  <a>Рулетики</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside8.png" alt="" />
+                  <a>Десерты</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside9.png" alt="" />
+                  <a>Японские сеты роллов</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside10.png" alt="" />
+                  <a>Холодные закуски</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside11.png" alt="" />
+                  <a>Нарезки</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside12.png" alt="" />
+                  <a>Наборы сыров</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside13.png" alt="" />
+                  <a>Горячие закуски</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside14.png" alt="" />
+                  <a>Закуски и салаты</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside15.png" alt="" />
+                  <a>Салаты</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside16.png" alt="" />
+                  <a>Овощи и фрукты</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside17.png" alt="" />
+                  <a>Сэндвичи, брускетты</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside18.png" alt="" />
+                  <a>Шашлык</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside19.png" alt="" />
+                  <a>Блины</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside20.png" alt="" />
+                  <a>Напитки</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside21.png" alt="" />
+                  <a>Дегустационные наборы</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside22.png" alt="" />
+                  <a>Постное меню</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside23.png" alt="" />
+                  <a>Посуда</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside24.png" alt="" />
+                  <a>Украшение шарами</a>
+                </div>
+                <div
+                  class="flex items-center gap-2 p-2 text-[13px] font-normal text-[#888] hover:text-[#f17e00] w-fit">
+                  <img src="./src/assets/img/aside25.png" alt="" />
+                  <a>Пицца</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="basis-[75%] max-[1114px]:basis-[100%] pl-[40px] max-[1114px]:p-[0px]">
+            <div>
+              <div class="flex items-center justify-between">
+                <label class="hidden max-[1114px]:block" for="task"
+                  ><i class="fa-solid fa-bars-staggered"></i
+                ></label>
+                <ul
+                  class="flex items-center justify-between gap-3 max-[580px]:hidden">
+                  <li class="text-[#888] font-normal hover:text-[#000]">
+                    <a href="">по популярности</a>
+                  </li>
+                  <li class="text-[#888] font-normal hover:text-[#000]">
+                    <a href="">цена по убыванию</a>
+                  </li>
+                  <li class="text-[#888] font-normal hover:text-[#000]">
+                    <a href="">цена по возрастанию</a>
+                  </li>
+                </ul>
+                <button
+                  class="text-[14px] text-[#6f6f6f] border border-[#888] rounded-[15px] px-2 active:scale-[1.1]">
+                  36 <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+              <div class="flex justify-between my-5">
+                <div class="flex justify-between gap-3 items-center flex-wrap">
+                  <div
+                    class="flex items-center gap-3 border border-[#f2830a] rounded-[100px] py-[7px] px-[12px] w-fit hover:scale-[1.1] transition-all">
+                    <img src="./src/assets/svg/flag.svg" alt="" />
+                    <p>Все блюда</p>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 border border-[#f2830a] rounded-[100px] py-[7px] px-[12px] w-fit hover:scale-[1.1] transition-all">
+                    <img src="./src/assets/svg/flag1.svg" alt="" />
+                    <p>Роллы</p>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 border border-[#f2830a] rounded-[100px] py-[7px] px-[12px] w-fit hover:scale-[1.1] transition-all">
+                    <img src="./src/assets/svg/flag2.svg" alt="" />
+                    <p>Суши</p>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 border border-[#f2830a] rounded-[100px] py-[7px] px-[12px] w-fit hover:scale-[1.1] transition-all">
+                    <img src="./src/assets/svg/flag3.svg" alt="" />
+                    <p>Сашими</p>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 border border-[#f2830a] rounded-[100px] py-[7px] px-[12px] w-fit hover:scale-[1.1] transition-all">
+                    <img src="./src/assets/svg/flag4.svg" alt="" />
+                    <p>Морепродукты</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div
+                class="maincards grid grid-cols-3 justify-between gap-5 max-[787px]:grid-cols-2 max-[517px]:grid-cols-1 max-[517px]:px-[10px]">
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard1.png"
+                    alt="" />
+                  <img
+                    class="absolute top-[12px] right-[12px]"
+                    src="./src/assets/svg/new.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[63px] right-[12px]"
+                    src="./src/assets/svg/pepper.svg"
+                    alt="" />
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard2.png"
+                    alt="" />
+                  <img
+                    class="absolute top-[12px] right-[12px]"
+                    src="./src/assets/svg/agree.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[63px] right-[12px]"
+                    src="./src/assets/svg/pepper.svg"
+                    alt="" />
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard3.png"
+                    alt="" />
+
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard4.png"
+                    alt="" />
+
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard5.png"
+                    alt="" />
+                  <img
+                    class="absolute top-[12px] right-[12px]"
+                    src="./src/assets/svg/gift.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[63px] right-[12px]"
+                    src="./src/assets/svg/pepper.svg"
+                    alt="" />
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard6.png"
+                    alt="" />
+                  <img
+                    class="absolute top-[12px] right-[12px]"
+                    src="./src/assets/svg/green.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[63px] right-[12px]"
+                    src="./src/assets/svg/agree.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[114px] right-[12px]"
+                    src="./src/assets/svg/pepper.svg"
+                    alt="" />
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard7.png"
+                    alt="" />
+                  <img
+                    class="absolute top-[12px] right-[12px]"
+                    src="./src/assets/svg/new.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[63px] right-[12px]"
+                    src="./src/assets/svg/pepper.svg"
+                    alt="" />
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard8.png"
+                    alt="" />
+                  <img
+                    class="absolute top-[12px] right-[12px]"
+                    src="./src/assets/svg/flower.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[63px] right-[12px]"
+                    src="./src/assets/svg/gift.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[114px] right-[12px]"
+                    src="./src/assets/svg/pepper.svg"
+                    alt="" />
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="maincard h-fit rounded-[14px] bg-white relative w-100%">
+                  <img
+                    class="rounded-t-[12px] w-full"
+                    src="./src/assets/img/maincard9.png"
+                    alt="" />
+                  <img
+                    class="absolute top-[12px] right-[12px]"
+                    src="./src/assets/svg/pepper.svg"
+                    alt="" />
+                  <img
+                    class="absolute top-[63px] right-[12px]"
+                    src="./src/assets/svg/green.svg"
+                    alt="" />
+                  <div class="p-2 flex flex-col justify-between h-[45%]">
+                    <div class="flex items-center justify-between pb-[14px]">
+                      <h1 class="font-semibold font-roboto text-[24px]">
+                        6 490 ₽
+                      </h1>
+                      <p class="text-[#6f6f6f] font-semibold"><s>7 390 ₽</s></p>
+                      <i
+                        class="fa-regular fa-heart text-red-700 text-[20px]"></i>
+                    </div>
+                    <div class="pb-[14px] flex flex-col gap-2">
+                      <h1 class="font-semibold">
+                        День Рождения <br />
+                        на 5-10 персон
+                      </h1>
+                      <p class="text-ellipsis text-[12px]">
+                        Отличное готовое решение для Вашего <br />
+                        дня рождения, ...
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between py-2">
+                      <h1 class="text-[#6f6f6f] text-[12px]">
+                        Вес: <span class="font-normal">1095 г</span>
+                      </h1>
+                      <button
+                        class="border rounded-[10px] border-[#f17e00] flex items-center gap-2 p-1 text-[12px]">
+                        1 шт <img src="./src/assets/svg/play.svg" alt="" />
+                      </button>
+                    </div>
+                    <button
+                      class="rounded-[8px] bg-[#f17e00] text-[white] p-3 px-7 active:scale-[0.9] hover:bg-white hover:text-[#f17e00]">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+    <input class="hidden" id="check" type="checkbox" />
+    <div class="header2">
+      <header class="bg-[#ededed] py-[14px] relative h-[100vh] m-0">
+        <label class="absolute top-4 right-4" for="check"
+          ><i class="fa-solid fa-xmark"></i
+        ></label>
+        <div class="container2 px-5">
+          <div class="flex items-start justify-between flex-col">
+            <ul class="flex items-start justify-between flex-col gap-[24px]">
+              <li><a href="">Для юридических лиц</a></li>
+              <li><a href="">О компании</a></li>
+              <li><a href="">Оплата и доставка</a></li>
+              <li><a href="">Акции и бонусные баллы</a></li>
+              <li><a href="">Площадки</a></li>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <div class="flex items-start justify-between gap-[24px] flex-col">
+              <div class="flex flex-col">
+                <a href="">+7 909 993 89 70</a>
+                <a href="">+7 495 120-21-50</a>
+              </div>
+              <div class="flex items-center justify-between gap-[10px]">
+                <img src="./src/assets/svg/whatsap.svg" alt="" />
+                <img src="./src/assets/svg/tg.svg" alt="" />
+                <img src="./src/assets/svg/tel.svg" alt="" />
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="./src/assets/svg/bucket.svg" alt="" />
+                <img src="./src/assets/svg/like.svg" alt="" />
+                <img src="./src/assets/svg/account.svg" alt="" />
+              </div>
+              <button
+                class="rounded-[12px] bg-[#f17e00] text-[white] p-3 px-7 w-fit">
+                Каталог
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 7,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          280: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          400: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          500: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          700: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          1000: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+          1150: {
+            slidesPerView: 6,
+            spaceBetween: 50,
+          },
+          1300: {
+            slidesPerView: 7,
+            spaceBetween: 50,
+          },
+        },
+      });
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 1000); // 2 seconds
+      });
+    </script>
+  </body>
+</html>
